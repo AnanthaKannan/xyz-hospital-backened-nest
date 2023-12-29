@@ -81,3 +81,5 @@ nest generate module admin
 # --flat (don't crate any folder)
 nest generate controller admin/admin --flat
 ```
+
+https://dev.to/carlomigueldy/building-a-restful-api-with-nestjs-and-mongodb-mongoose-2165
