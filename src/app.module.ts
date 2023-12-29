@@ -7,6 +7,7 @@ import { AdminModule } from './admin/admin.module';
 import { TodoModule } from './todo/todo.module';
 import configuration from './config/configuration';
 import { MongoDBModule } from './mongodb.module';
+import { FeedbackModule } from './feedback/feedback.module';
 
 @Module({
   imports: [
@@ -17,6 +18,7 @@ import { MongoDBModule } from './mongodb.module';
       load: [configuration],
     }),
     TodoModule,
+    FeedbackModule,
   ],
   controllers: [AppController],
   providers: [AppService],

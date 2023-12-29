@@ -1,6 +1,6 @@
 import { Controller, Get, Body, Post } from '@nestjs/common';
 
-import { LoggerService } from '../logger/logger.service'; // Adjust the path accordingly
+import { LoggerService } from '../logger/logger.service';
 import { TodoService } from './todo.service';
 import { CreateTodoDto } from './dto/create-todo.dto';
 
