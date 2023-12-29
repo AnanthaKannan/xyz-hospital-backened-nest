@@ -5,6 +5,7 @@
 	"author": "",
 	"private": true,
 	"license": "UNLICENSED",
+	"api": "https://xyz-hospital-backend.onrender.com",
 	"engines": {
 		"node": "21.x"
 	},
