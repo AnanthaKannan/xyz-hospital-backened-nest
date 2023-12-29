@@ -14,7 +14,6 @@ export class FeedbackService {
 
   async list(): Promise<Feedback[]> {
     this.logger.log('init list', this.constructor.name);
-    throw new Error('Test error');
     return await this.model.find().exec();
   }
 }
