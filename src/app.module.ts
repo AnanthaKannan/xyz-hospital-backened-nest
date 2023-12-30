@@ -8,6 +8,7 @@ import { TodoModule } from './todo/todo.module';
 import configuration from './config/configuration';
 import { MongoDBModule } from './mongodb.module';
 import { FeedbackModule } from './feedback/feedback.module';
+import { HospitalModule } from './hospital/hospital.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { FeedbackModule } from './feedback/feedback.module';
     }),
     TodoModule,
     FeedbackModule,
+    HospitalModule,
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -11,7 +11,7 @@ export class FeedbackController {
 
   @Get()
   async list() {
-    this.logger.log('init list', this.constructor.name);
+    this.logger.log('list', this.constructor.name);
     return await this.fs.list();
   }
 }

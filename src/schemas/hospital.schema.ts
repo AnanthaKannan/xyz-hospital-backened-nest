@@ -1,24 +1,24 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 
-export type TodoDocument = Todo & Document;
+export type HospitalDocument = Hospital & Document;
 
-@Schema()
-export class Todo {
+@Schema({
+  timestamps: true,
+  versionKey: false,
+})
+export class Hospital extends Document {
   @Prop({ required: true })
-  title: string;
+  name: string;
 
   @Prop()
   description?: string;
 
-  @Prop()
-  completedAt?: Date;
+  @Prop({ required: true })
+  email: string;
 
   @Prop({ required: true })
-  createdAt: Date;
-
-  @Prop()
-  deletedAt?: Date;
+  password: string;
 }
 
-export const TodoSchema = SchemaFactory.createForClass(Todo);
+export const HospitalSchema = SchemaFactory.createForClass(Hospital);

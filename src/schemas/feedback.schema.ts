@@ -8,13 +8,16 @@ export type FeedbackDocument = Feedback & Document;
   versionKey: false,
 })
 export class Feedback extends Document {
-  // @Prop({
-  //   type: String,
-  //   ref: 'Hospital',
-  //   required: true,
-  //   select: false,
-  // })
-  // _hospitalId: string;
+  @Prop({
+    type: String,
+    // ref: 'Hospital',
+    required: true,
+    select: false,
+  })
+  _hospitalId: string;
+
+  @Prop({ required: true })
+  id: number;
 
   @Prop()
   subject: string;
